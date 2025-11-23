@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>New To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>To Do List</h1>
+        <h1>Just do it.</h1>
     <div class="newtask">
     <input type="text" id="input" placeholder="Task to be done">
     <button id="add">Add</button>
@@ -18,6 +21,25 @@
  
     </div>
 
+<!-- Custom Alert -->
+<div id="customAlert" class="overlay">
+    <div class="modal">
+        <p id="alertMessage"></p>
+        <button id="alertOk">OK</button>
+    </div>
+</div>
+
+<!-- Custom Prompt -->
+<div id="customPrompt" class="overlay">
+    <div class="modal">
+        <p id="promptLabel"></p>
+        <input type="text" id="promptInput">
+        <div class="prompt-actions">
+            <button id="promptCancel">Cancel</button>
+            <button id="promptOk">OK</button>
+        </div>
+    </div>
+</div>
 
     <script src="main.js"></script>
 </body>
